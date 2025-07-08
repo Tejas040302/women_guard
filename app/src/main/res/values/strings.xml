@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">WomenSafety</string>
+    <string name="emergency_location_message">My current location is: https://maps.google.com/?q=%1$s,%2$s</string>
+    <string name="sos_alert_message">SOS Alert! Name: %1$s, Age: %2$s, Blood Group: %3$s. Location: %4$s</string>
+    <string name="sms_sent">SMS sent to %1$s</string>
+    <string name="sms_failed">Failed to send SMS to %1$s</string>
+    <string name="no_contacts_available">No contacts available.</string>
+    <string name="authenticate_first">Please authenticate first.</string>
+    <string name="location_permission_required">Location permission is required.</string>
+    <string name="sms_permission_required">SMS permission is required.</string>
+    <string name="contacts_permission_required">Contacts permission is required.</string>
+    <string name="contact_added">Contact %1$s added.</string>
+    <string name="contact_already_exists">Contact already exists.</string>
+    <string-array name="blood_groups">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string name="appname">Women Safety</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="add_emergency_contact">Add Emergency Contact</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+</resources>

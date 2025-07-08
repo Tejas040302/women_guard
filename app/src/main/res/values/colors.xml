@@ -1,0 +1,20 @@
+<resources>
+    <!-- Background colors -->
+    <color name="backgroundPrimary">#DC3131</color>
+    <color name="backgroundProfile">#FFFFFF</color>
+
+    <!-- Text colors -->
+    <color name="textPrimary">#FFFFFF</color>
+
+    <!-- Accent color -->
+    <color name="colorAccent">#62113B</color>
+
+    <!-- Divider color -->
+    <color name="divider">#2067D7</color>
+
+    <!-- Button colors -->
+    <color name="buttonPrimary">#6200EE</color>
+    <color name="buttonSecondary">#E60D0D</color>
+
+    <color name="your_hint_color">#84FFFF</color>
+</resources>

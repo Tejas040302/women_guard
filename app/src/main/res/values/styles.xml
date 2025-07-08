@@ -1,0 +1,35 @@
+<resources>
+    <!-- Custom style for TextInputLayout -->
+    <style name="CustomTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="helperTextTextColor">@android:color/black</item> <!-- Set helper text color to black -->
+        <item name="hintTextColor">@color/textPrimary</item> <!-- Set hint text color to orange -->
+    </style>
+
+    <!-- Custom style for Spinner text -->
+    <style name="CustomSpinnerStyle">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="actionMenuTextColor">#0B0505</item>
+        <item name="actionButtonStyle">@android:color/holo_blue_dark</item>
+
+    </style>
+
+    <style name="ButtonPrimaryStyle">
+        <item name="android:backgroundTint">@color/buttonPrimary</item>
+
+    </style>
+
+    <style name="ButtonSecondaryStyle">
+        <item name="android:backgroundTint">@color/buttonSecondary</item>
+
+    </style>
+
+
+
+
+        <style name="BoldBlackText">
+            <item name="android:textStyle">bold</item>
+            <item name="android:textColor">@color/backgroundProfile</item>
+        </style>
+
+
+</resources>

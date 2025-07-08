@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Emergency Instructions Text -->
+        <TextView
+            android:id="@+id/textViewEmergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Instructions"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Safety Instructions Section -->
+        <TextView
+            android:id="@+id/textViewSafetyInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safety Instructions"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewSafetyInstruction1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Always stay aware of your surroundings."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewSafetyInstruction2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Avoid walking alone at night."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewSafetyInstruction3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Trust your instincts and stay alert."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewSafetyInstruction4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Keep emergency contacts saved and accessible."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewSafetyInstruction5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Share your whereabouts with a trusted person."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Emergency Numbers Section -->
+        <TextView
+            android:id="@+id/textViewEmergencyNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Numbers"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonPolice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Police (112)"
+            android:onClick="onEmergencyNumberClick" />
+
+        <Button
+            android:id="@+id/buttonAmbulance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambulance (102)"
+            android:onClick="onEmergencyNumberClick" />
+
+        <Button
+            android:id="@+id/buttonFire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fire Department (101)"
+            android:onClick="onEmergencyNumberClick" />
+
+        <Button
+            android:id="@+id/buttonWomenHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Women Helpline (1091)"
+            android:onClick="onEmergencyNumberClick" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Websites related to Women's Safety -->
+        <TextView
+            android:id="@+id/textViewSafetyWebsites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Useful Websites on Women's Safety"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewWebsite1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.https://112.gov.in/"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openWebsite" />
+
+        <TextView
+            android:id="@+id/textViewWebsite2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. https://www.socialmediamatters.in/women-safety"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openWebsite" />
+
+        <TextView
+            android:id="@+id/textViewWebsite3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Stop Violence Against Women - https://www.stopviolence.org/"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openWebsite" />
+
+        <TextView
+            android:id="@+id/textViewWebsite4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. UN Women - https://www.unwomen.org/"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openWebsite" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Developer Information -->
+        <TextView
+            android:id="@+id/textViewDevelopers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developers"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDeveloper1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shridhar Patil - LinkedIn"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openLinkedInProfile" />
+
+        <TextView
+            android:id="@+id/textViewDeveloper2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shubham Swami - LinkedIn"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openLinkedInProfile" />
+
+        <TextView
+            android:id="@+id/textViewDeveloper3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prajwal Hiremath - LinkedIn"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openLinkedInProfile" />
+
+        <TextView
+            android:id="@+id/textViewDeveloper4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tejas Samant - LinkedIn"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openLinkedInProfile" />
+
+    </LinearLayout>
+
+</ScrollView>
